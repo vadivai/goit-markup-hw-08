@@ -2,25 +2,25 @@
   text-align: center;
   padding: 60px 0;
   background-color: #c4c4c4;
-  background-image: var(--gradient), url('../../images/hero-bg-mob-1x.jpg');
+  background-image: var(--gradient), url('../images/hero-bg-mob-1x.jpg');
   @include retina {
-    background-image: var(--gradient), url('../../images/hero-bg-mob-2x.jpg');
+    background-image: var(--gradient), url('../images/hero-bg-mob-2x.jpg');
   }
 
   @include tablet {
     padding: 118px 0;
-    background-image: var(--gradient), url('../../images/hero-bg-tab-1x.jpg');
+    background-image: var(--gradient), url('../images/hero-bg-tab-1x.jpg');
     @include retina {
-      background-image: var(--gradient), url('../../images/hero-bg-tab-2x.jpg');
+      background-image: var(--gradient), url('../images/hero-bg-tab-2x.jpg');
     }
   }
 
   @include desktop {
     max-width: 1600px;
     padding: 200px 0;
-    background-image: var(--gradient), url('../../images/hero-bg-desk-1x.jpg');
+    background-image: var(--gradient), url('../images/hero-bg-desk-1x.jpg');
     @include retina {
-      background-image: var(--gradient), url('../../images/hero-bg-desk-2x.jpg');
+      background-image: var(--gradient), url('../images/hero-bg-desk-2x.jpg');
     }
   }
 

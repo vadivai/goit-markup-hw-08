@@ -14,6 +14,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       align-items: baseline;
+      // justify-content: space-around; потом перебаить space-between или flex-startом
     }
     @include desktop {
       flex-wrap: nowrap;
@@ -27,8 +28,9 @@
     }
 
     @include tablet {
-      margin-left: 76px;
-      margin-right: 165px;
+      // margin-left: 76px;
+      // margin-right: 165px;
+      margin-right: auto;
     }
     @include desktop {
       margin: 0;
