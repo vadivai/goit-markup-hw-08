@@ -96,7 +96,8 @@
 }
 
 .nav__list {
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: center;
   column-gap: 50px;
 
@@ -153,7 +154,8 @@
 }
 
 .contacts__list {
-  display: flex;
+  // display: flex;
+  display: none;
   column-gap: 50px;
   /* align-items: center; */
 }
