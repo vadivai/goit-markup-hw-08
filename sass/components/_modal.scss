@@ -22,8 +22,13 @@
 
 .modal {
   position: relative;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
+
   padding: 40px;
   margin: auto;
   background-color: var(--primary-color-white);

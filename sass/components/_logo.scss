@@ -3,10 +3,10 @@
   @include font(700, 24px, 1.17, null);
   color: var(--accent-color);
   display: block;
+  text-align: left;
 
   @include desktop {
     @include font(700, 26px, 1.19, null);
-    text-align: left;
   }
   &--white {
     color: var(--primary-color-white);

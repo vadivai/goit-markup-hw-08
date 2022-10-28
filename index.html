@@ -24,9 +24,83 @@
   <body>
     <!----------------------- Шапка сайта ------------------------------->
     <header class="header">
+      <!-- <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu__container">
+          <button type="button" class="mob-menu__close" data-menu-close>
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu__top">
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <div class="mob-contacts header__contacts">
+              <a class="mob-contacts__tel link" href="tel:+">+38 096 111 11 11</a>
+              <a class="mob-contacts__email link" href="mailto:">info@devstudio.com</a>
+              <button type="button" class="mob-contacts__btn button" data-modal-open></button>
+            </div>
+            <ul class="mob-soc list">
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  class="mob-soc__link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  href=""
+                  class="mob-soc__link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
       <div class="container header__container">
+        <a href="./index.html" class="logo link">Web<span class="logo--black">Studio</span></a>
+        <button type="button" class="mob-menu__open" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
-          <a href="./index.html" class="logo link">Web<span class="logo--black">Studio</span></a>
+          <!-- <a href="./index.html" class="logo link">Web<span class="logo--black">Studio</span></a> -->
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link link current">Студія</a>
@@ -58,84 +132,9 @@
               </a>
             </li>
           </ul>
-          <button type="button" class="menu-open" data-menu-open>
-            <svg width="40" height="40">
-              <use href=""></use>
-            </svg>
-          </button>
-        </div>
-        <div class="mob-menu is-hidden" data-menu>
-          <div class="container">
-            <div class="mob-menu-top">
-              <button type="button" class="menu-close" data-menu-close>
-                <svg width="40" height="40">
-                  <use href="./img/symbol-defs.svg#icon-close"></use>
-                </svg>
-              </button>
-              <ul class="mob-menu__list list">
-                <li class="mob-menu__item">
-                  <a class="mob-menu__link link current" href="./index.html">Студія</a>
-                </li>
-                <li class="mob-menu__item">
-                  <a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li class="mob-menu__item">
-                  <a class="mob-menu__link link" href="">Контакти</a>
-                </li>
-              </ul>
-            </div>
-            <div class="mob-menu-bottom">
-              <div class="mob-connect header__connect">
-                <a class="mob-connect__tel link" href="tel:">+38 096 111 11 11</a>
-                <a class="mob-connect__email link" href="mailto:">info@devstudio.com</a>
-                <button class="mob-connect__btn btn btn--light" data-modal-open type="button">
-                  Название
-                </button>
-              </div>
-              <ul class="mob-soc list">
-                <li class="mob-soc__item">
-                  <a
-                    class="mob-soc__link link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >Instagram</a
-                  >
-                </li>
-                <li class="mob-soc__item">
-                  <a
-                    class="mob-soc__link link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >Twitter</a
-                  >
-                </li>
-                <li class="mob-soc__item">
-                  <a
-                    class="mob-soc__link link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >Facebook</a
-                  >
-                </li>
-                <li class="mob-soc__item">
-                  <a
-                    href=""
-                    class="mob-soc__link link"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    >LinkedIn</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </header>
-    <!----------------------- Сторінка Студія ---------------------------->
     <main>
       <!-- ---------------------Герой ------------------------------------>
       <section class="hero section">
@@ -237,218 +236,7 @@
         </div>
       </section>
       <!-------------------------- Секція Наша команда -------------------------->
-      <section class="team section">
-        <div class="container">
-          <h2 class="team__title title">Наша команда</h2>
-          <ul class="team__list list">
-            <li class="team__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/img-demyanenko-desk.jpg    1x,
-                    ./images/img-demyanenko-desk-2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/img-demyanenko-tab.jpg 1x, ./images/img-demyanenko-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/img-demyanenko-mob.jpg 1x, ./images/img-demyanenko-mob-2x.jpg 2x"
-                  media="(min-width: 480px)"
-                />
-                <img
-                  src="./images/img-demyanenko-desk.jpg"
-                  alt="Ігор Дем'яненко, фото"
-                  width="270"
-                />
-              </picture>
-              <h3 class="team__name">Ігор Дем'яненко</h3>
-              <p class="team__position">Product Designer</p>
-              <ul class="socials list">
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="team__item">
-              <picture>
-                <source
-                  srcset="./images/img-repina-desk.jpg 1x, ./images/img-repina-desk-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/img-repina-tab.jpg 1x, ./images/img-repina-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/img-repina-mob.jpg 1x, ./images/img-repina-mob-2x.jpg 2x"
-                  media="(min-width: 480px)"
-                />
-                <img src="./images/img-repina-desk.jpg" alt="Ольга Рєпіна, фото" width="270" />
-              </picture>
-
-              <h3 class="team__name">Ольга Рєпіна</h3>
-              <p class="team__position">Frontend Developer</p>
-              <ul class="socials list">
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="team__item">
-              <picture>
-                <source
-                  srcset="./images/img-tarasov-desk.jpg 1x, ./images/img-tarasov-desk-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/img-tarasov-tab.jpg 1x, ./images/img-tarasov-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/img-tarasov-mob.jpg 1x, ./images/img-tarasov-mob-2x.jpg 2x"
-                  media="(min-width: 480px)"
-                />
-                <img src="./images/img-tarasov-desk.jpg" alt="Микола Тарасов, фото" width="270" />
-              </picture>
-              <h3 class="team__name">Микола Тарасов</h3>
-              <p class="team__position">Marketing</p>
-              <ul class="socials list">
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="team__item">
-              <picture>
-                <source
-                  srcset="./images/img-ermakov-desk.jpg 1x, ./images/img-ermakov-desk-2x.jpg 2x"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="./images/img-ermakov-tab.jpg 1x, ./images/img-ermakov-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="./images/img-ermakov-mob.jpg 1x, ./images/img-ermakov-mob-2x.jpg 2x"
-                  media="(min-width: 480px)"
-                />
-                <img src="./images/img-ermakov-desk.jpg" alt="Михайло Єрмаков, фото" width="270" />
-              </picture>
-
-              <h3 class="team__name">Михайло Єрмаков</h3>
-              <p class="team__position">UI Designer</p>
-              <ul class="socials list">
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="socials__link">
-                    <svg class="socials__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
+      /
       <!----------------------- Секція Постійні клієнти------------------------->
       <section class="clients section">
         <div class="container">
